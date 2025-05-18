@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navi Dashboard</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex h-screen">
+    <nav class="w-64 bg-gray-800 text-white p-4">
+        <h1 class="text-xl mb-4 font-bold">Navi</h1>
+        <ul>
+            <li class="mb-2"><a href="/" class="hover:underline">Dashboard</a></li>
+        </ul>
+    </nav>
+    <main class="flex-1 p-6 bg-gray-100 overflow-auto">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
